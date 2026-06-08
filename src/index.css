@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --color-primary: var(--color-primary-base);
+  --color-secondary: var(--color-secondary-base);
+  --color-accent: var(--color-accent-base);
+  --color-success: #4A7C59;
+  --color-error: #C94C4C;
+  
+  --color-background: var(--color-bg-base);
+  --color-surface: var(--color-surface-base);
+  --color-foreground: var(--color-fg-base);
+  --color-foreground-muted: var(--color-fg-muted);
+  --color-border: var(--color-border-base);
+}
+
+@layer base {
+  :root {
+    --color-primary-base: #C8A96B;
+    --color-secondary-base: #E6D3B3;
+    --color-accent-base: #D4AF37;
+    
+    --color-bg-base: #F8F5F0;
+    --color-surface-base: #FFFFFF;
+    --color-fg-base: #3A2D25;
+    --color-fg-muted: #6B5C52;
+    --color-border-base: #E6D3B3;
+  }
+
+  .dark {
+    --color-bg-base: #121212;
+    --color-surface-base: #1E1E1E;
+    --color-fg-base: #F8F5F0;
+    --color-fg-muted: #D9D9D9;
+    --color-border-base: #333333;
+  }
+}
+
+@layer utilities {
+  .clip-path-slant {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+}
+
+body {
+  @apply bg-background text-foreground font-sans transition-colors duration-300;
+  direction: var(--direction, ltr);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif font-medium tracking-tight;
+}

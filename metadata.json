@@ -1,0 +1,8 @@
+{
+  "name": "Resound Gifts Luxury E-commerce",
+  "description": "A premium multilingual e-commerce platform for luxury flowers, perfumes, and personalized gifts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
