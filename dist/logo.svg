@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Resound Gifts logo</title>
+  <desc id="desc">A luxury gold monogram mark for Resound Gifts.</desc>
+  <rect width="512" height="512" rx="96" fill="#F5E6EF"/>
+  <circle cx="256" cy="256" r="184" fill="none" stroke="#D946A6" stroke-width="18"/>
+  <path
+    d="M169 337V170h91c37 0 65 9 83 26 15 14 22 32 22 55 0 30-14 53-43 69l50 17v31l-82-30h-57v-36h29c19 0 34-4 43-12 9-8 14-20 14-36 0-32-21-48-62-48h-43v131h-45Z"
+    fill="#D946A6"
+  />
+  <path
+    d="M247 315c0-24 19-43 43-43s43 19 43 43-19 43-43 43-43-19-43-43Z"
+    fill="#D4AF37"
+  />
+  <path
+    d="M290 290c-24-31-54-56-90-74"
+    fill="none"
+    stroke="#D4AF37"
+    stroke-width="16"
+    stroke-linecap="round"
+  />
+</svg>
