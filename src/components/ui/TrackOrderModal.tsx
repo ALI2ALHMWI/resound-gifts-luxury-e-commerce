@@ -314,10 +314,10 @@ export default function TrackOrderModal({ isOpen, onClose, initialOrderId = '' }
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 15 }}
             transition={{ type: 'spring', duration: 0.5 }}
-            className="relative bg-background text-foreground w-full max-w-2xl border border-[#C5A059]/25 shadow-2xl max-h-[90vh] overflow-y-auto rounded-none flex flex-col z-[101]"
+            className="relative bg-background text-foreground w-full max-w-2xl border border-[#D946A6]/25 shadow-2xl max-h-[90vh] overflow-y-auto rounded-none flex flex-col z-[101]"
           >
             {/* Header border decor */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-[#C5A059] to-primary" />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-[#D946A6] to-primary" />
 
             {/* Close Button */}
             <button
@@ -331,7 +331,7 @@ export default function TrackOrderModal({ isOpen, onClose, initialOrderId = '' }
             <div className="p-6 sm:p-8">
               {/* Luxury brand header */}
               <div className="text-center mb-8">
-                <span className="text-[10px] uppercase font-serif tracking-[0.3em] text-[#C5A059] block mb-2">Track Luxury Parcels</span>
+                <span className="text-[10px] uppercase font-serif tracking-[0.3em] text-[#D946A6] block mb-2">Track Luxury Parcels</span>
                 <h3 className="font-serif text-2xl sm:text-3xl tracking-wide uppercase">
                   {isAr ? 'تتبع هدايا ريزاوند' : 'Resound Gift Tracker'}
                 </h3>
@@ -365,7 +365,7 @@ export default function TrackOrderModal({ isOpen, onClose, initialOrderId = '' }
                   >
                     {isLoading ? (
                       <>
-                        <Loader2 size={14} className="animate-spin text-[#C5A059]" />
+                        <Loader2 size={14} className="animate-spin text-[#D946A6]" />
                         <span>{isAr ? 'بحث...' : 'LOCATING...'}</span>
                       </>
                     ) : (
@@ -383,7 +383,7 @@ export default function TrackOrderModal({ isOpen, onClose, initialOrderId = '' }
                       key={demoId}
                       type="button"
                       onClick={() => { setOrderQuery(demoId); triggerLookup(demoId); }}
-                      className="underline hover:text-[#C5A059] font-mono"
+                      className="underline hover:text-[#D946A6] font-mono"
                     >
                       {demoId}
                     </button>
@@ -398,11 +398,11 @@ export default function TrackOrderModal({ isOpen, onClose, initialOrderId = '' }
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="py-12 flex flex-col items-center justify-center gap-4 border border-[#C5A059]/10 bg-surface/50"
+                    className="py-12 flex flex-col items-center justify-center gap-4 border border-[#D946A6]/10 bg-surface/50"
                   >
-                    <Loader2 size={40} className="animate-spin text-[#C5A059]" />
+                    <Loader2 size={40} className="animate-spin text-[#D946A6]" />
                     <div className="text-center">
-                      <p className="font-serif text-sm uppercase tracking-widest text-[#C5A059]">{isAr ? 'جاري الاتصال بالنظام' : 'Accessing Luxury Registry'}</p>
+                      <p className="font-serif text-sm uppercase tracking-widest text-[#D946A6]">{isAr ? 'جاري الاتصال بالنظام' : 'Accessing Luxury Registry'}</p>
                       <p className="text-xs text-foreground-muted mt-1">{isAr ? 'نقوم بفحص مستودع التنسيق اليدوي...' : 'Verifying handcrafted arrangement status...'}</p>
                     </div>
                   </motion.div>
@@ -429,8 +429,8 @@ export default function TrackOrderModal({ isOpen, onClose, initialOrderId = '' }
                       <div className="border-t md:border-t-0 md:border-l border-border/50 md:pl-5 rtl:border-l-0 rtl:border-r rtl:mr-5 rtl:pr-5">
                         <span className="text-[10px] uppercase text-foreground-muted tracking-wider block">{isAr ? 'التوصيل المتوقع' : 'ESTIMATED DELIVERY'}</span>
                         <div className="flex items-center gap-2 text-primary mt-1">
-                          <Clock size={16} className="text-[#C5A059]" />
-                          <p className="font-serif text-sm font-semibold text-[#C5A059]">{searchedData.estDelivery}</p>
+                          <Clock size={16} className="text-[#D946A6]" />
+                          <p className="font-serif text-sm font-semibold text-[#D946A6]">{searchedData.estDelivery}</p>
                         </div>
 
                         <span className="text-[10px] uppercase text-foreground-muted tracking-wider block mt-4">{isAr ? 'مندوب ريزاوند للتسلم الفخم' : 'WHITE-GLOVE REPRESENTATIVE'}</span>
@@ -445,8 +445,8 @@ export default function TrackOrderModal({ isOpen, onClose, initialOrderId = '' }
                     </div>
 
                     {/* Progress Status Header */}
-                    <div className="flex items-center gap-2 border-b border-border pb-3">
-                      <Truck size={18} className="text-[#C5A059]" />
+                     <div className="flex items-center gap-2 border-b border-border pb-3">
+                       <Truck size={18} className="text-[#D946A6]" />
                       <span className="text-xs font-serif uppercase tracking-widest font-semibold">{isAr ? 'خطوات التحضير الفوري وسفر الشحنة' : 'Luxe Handling & Assembly Sequence'}</span>
                     </div>
 
@@ -468,11 +468,11 @@ export default function TrackOrderModal({ isOpen, onClose, initialOrderId = '' }
                                   <Check size={12} className="stroke-[3]" />
                                 </div>
                               )}
-                              {isCurrent && (
-                                <div className="w-6 h-6 rounded-full bg-background border border-[#C5A059] flex items-center justify-center relative">
-                                  {/* Pulsing ring aura */}
-                                  <span className="absolute inset-0 rounded-full bg-[#C5A059]/30 animate-ping" />
-                                  <div className="w-3 h-3 rounded-full bg-[#C5A059]" />
+                               {isCurrent && (
+                                 <div className="w-6 h-6 rounded-full bg-background border border-[#D946A6] flex items-center justify-center relative">
+                                   {/* Pulsing ring aura */}
+                                   <span className="absolute inset-0 rounded-full bg-[#D946A6]/30 animate-ping" />
+                                   <div className="w-3 h-3 rounded-full bg-[#D946A6]" />
                                 </div>
                               )}
                               {!isCompleted && !isCurrent && (
@@ -484,7 +484,7 @@ export default function TrackOrderModal({ isOpen, onClose, initialOrderId = '' }
                             <div className="flex-grow pt-0.5">
                               <div className="flex justify-between items-center gap-2">
                                 <h4 className={`text-sm uppercase font-serif tracking-widest font-medium ${
-                                  isCurrent ? 'text-[#C5A059]' : isCompleted ? 'text-foreground' : 'text-foreground-muted'
+                                  isCurrent ? 'text-[#D946A6]' : isCompleted ? 'text-foreground' : 'text-foreground-muted'
                                 }`}>
                                   {step.title}
                                 </h4>

@@ -20,15 +20,15 @@
 
 @layer base {
   :root {
-    --color-primary-base: #C8A96B;
-    --color-secondary-base: #E6D3B3;
+    --color-primary-base: #E83C7A;
+    --color-secondary-base: #FDF2F7;
     --color-accent-base: #D4AF37;
     
-    --color-bg-base: #F8F5F0;
+    --color-bg-base: #FDF2F7;
     --color-surface-base: #FFFFFF;
-    --color-fg-base: #3A2D25;
-    --color-fg-muted: #6B5C52;
-    --color-border-base: #E6D3B3;
+    --color-fg-base: #4A3A3A;
+    --color-fg-muted: #8B7B7B;
+    --color-border-base: #F5D6E5;
   }
 
   .dark {

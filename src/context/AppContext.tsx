@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 
 type Language = 'en' | 'ar';
 type Theme = 'light' | 'dark';
-type View = 'home' | 'catalog' | 'product' | 'builder' | 'checkout' | 'reminders';
+type View = 'home' | 'catalog' | 'product' | 'builder' | 'checkout' | 'reminders' | 'trending' | 'hot_offer';
 
 interface AppContextType {
   language: Language;
@@ -23,10 +23,11 @@ interface AppContextType {
 const translations = {
   en: {
     'nav.home': 'Home',
-    'nav.flowers': 'Flowers',
-    'nav.perfumes': 'Perfumes',
-    'nav.gifts': 'Luxury Gifts',
+    'nav.category': 'Category',
+    'nav.trending': 'Trending',
+    'nav.hot_offer': 'Hot Offer',
     'nav.build': 'Build Your Gift',
+    'nav.premium': 'Unlock Premium Access',
     'hero.title': 'Luxury Flowers, Perfumes & Personalized Gifts',
     'hero.subtitle': 'Discover the art of gifting. They resonate, leaving an echo in their hearts.',
     'hero.cta.shop': 'Shop Now',
@@ -65,10 +66,11 @@ const translations = {
   },
   ar: {
     'nav.home': 'الرئيسية',
-    'nav.flowers': 'زهور',
-    'nav.perfumes': 'عطور',
-    'nav.gifts': 'هدايا فاخرة',
+    'nav.category': 'الفئات',
+    'nav.trending': 'الأكثر رواجاً',
+    'nav.hot_offer': 'عرض ساخن',
     'nav.build': 'اصنع هديتك',
+    'nav.premium': 'فتح الوصول المميز',
     'hero.title': 'زهور وعطور وهدايا فاخرة مخصصة',
     'hero.subtitle': 'اكتشف فن الإهداء. يتردد صداها، تاركة أثراً في قلوبهم.',
     'hero.cta.shop': 'تسوق الآن',
